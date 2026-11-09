@@ -67,6 +67,17 @@ Implement a REST API for user management
 using the existing project architecture.
 ```
 
+### `debugging-workflows`
+
+Helps Codex investigate and fix bugs in an existing project, map relevant code paths, explain changes, and prepare clear handoffs or durable project notes.
+
+Example request:
+
+```text
+$debugging-workflows Debug why saving a profile sometimes drops the avatar.
+Trace the relevant code, fix the cause, and explain the change.
+```
+
 ## Repository layout
 
 ```text
@@ -88,6 +99,9 @@ Current skill files:
 - `skills/express-typescript-backend/SKILL.md` — main instructions and workflow.
 - `skills/express-typescript-backend/references/` — stack detection, architecture, implementation, security, and testing guidance.
 - `skills/express-typescript-backend/agents/openai.yaml` — display name and short description.
+- `skills/debugging-workflows/SKILL.md` — bug-fixing workflow for debugging, project system maps, code explanations, handoffs, and second-brain notes.
+- `skills/debugging-workflows/references/` — focused checklists for each workflow.
+- `skills/debugging-workflows/agents/openai.yaml` — display name and short description.
 
 ## Add a skill
 
